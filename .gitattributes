@@ -1,0 +1,3 @@
+# O .pbix é um contêiner binário: o Git não deve tentar comparar nem mesclar
+*.pbix binary -diff -merge
+*.pbit binary -diff -merge

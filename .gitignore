@@ -1,0 +1,13 @@
+# Power BI temporários
+*.pbix.bak
+~$*
+.pbi/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Caches locais do projeto .pbip (nao versionar)
+**/.pbi/
+*.abf
