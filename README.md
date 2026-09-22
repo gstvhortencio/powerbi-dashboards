@@ -14,7 +14,7 @@ Cada dashboard traz o arquivo `.pbix` para abrir e interagir, as capturas das p�
 
 ## A Ilusão do Preço — vinho, rótulo e prova cega
 
-![Página Visão Geral](ilusao-do-preco/img/01-visao-geral.png)
+![Página Visão Geral](ilusao-precos-vinhos/img/01-visao-geral.png)
 
 Saber o preço muda a nota que você dá a um vinho? A base traz 40.000 garrafas provadas duas vezes — **às cegas** e depois **com o preço à vista**.
 
@@ -29,19 +29,19 @@ Vinho caro ganha pontos por ser caro; vinho barato perde pontos por ser barato. 
 
 Do decil mais barato ao mais caro, a nota **às cegas** anda 0,8 ponto. **Com o preço à vista**, anda 9,7 pontos. A diferença é o rótulo.
 
-![Página Efeito do preço](ilusao-do-preco/img/02-efeito-do-preco.png)
+![Página Efeito do preço](ilusao-precos-vinhos/img/02-efeito-do-preco.png)
 
 Nas duas linhas da terceira página **ninguém viu o preço** — e ainda assim especialista e leigo discordam de direção: o especialista dá notas crescentes conforme a faixa de preço sobe (80,6 → 83,2), o leigo faz o inverso (82,6 → 81,3).
 
-![Página Quem e onde](ilusao-do-preco/img/03-quem-e-onde.png)
+![Página Quem e onde](ilusao-precos-vinhos/img/03-quem-e-onde.png)
 
 > **Nota sobre os dados.** Checando a base durante a construção, concluí que ela é gerada por computador, não coletada de provas cegas reais. Os números acima descrevem o comportamento do gerador, não o de bebedores de vinho — não servem como evidência sobre percepção humana de preço. O exercício de modelagem, DAX e visualização é o mesmo.
 
 **Técnica:** 3 páginas · 4 colunas calculadas · 13 medidas DAX · Pearson escrito na mão com `SUMX`, porque o DAX não tem `CORREL`.
 
-**Dados:** [Wine Price vs. Blind Quality](https://www.kaggle.com/datasets/sergionefedov/wine-price-vs-blind-qualitydo-you-pay-for-taste), por sergionefedov no Kaggle, sob CC0 1.0. O CSV está versionado em `ilusao-do-preco/data/` para que o relatório continue reproduzível se o dataset de origem mudar.
+**Dados:** [Wine Price vs. Blind Quality](https://www.kaggle.com/datasets/sergionefedov/wine-price-vs-blind-qualitydo-you-pay-for-taste), por sergionefedov no Kaggle, sob CC0 1.0. O CSV está versionado em `ilusao-precos-vinhos/data/` para que o relatório continue reproduzível se o dataset de origem mudar.
 
-📁 [`ilusao-do-preco/`](ilusao-do-preco/)
+📁 [`ilusao-precos-vinhos/`](ilusao-precos-vinhos/)
 
 ---
 
@@ -80,7 +80,7 @@ powerbi-dashboards/
 ├── README.md / README.en.md
 ├── LICENSE · .gitignore · .gitattributes
 │
-├── ilusao-do-preco/
+├── ilusao-precos-vinhos/
 │   ├── img/          # as 3 páginas
 │   ├── data/         # o CSV usado pelo relatório
 │   └── powerbi/      # ilusao-do-preco.pbix
@@ -118,4 +118,4 @@ Projetos de estudo. Não são trabalho profissional nem encomenda de cliente.
 
 ## Licença
 
-Código e documentação sob licença MIT — ver [`LICENSE`](LICENSE). O CSV em `ilusao-do-preco/data/` deriva de dataset sob CC0 1.0 e mantém essa licença.
+Código e documentação sob licença MIT — ver [`LICENSE`](LICENSE). O CSV em `ilusao-precos-vinhos/data/` deriva de dataset sob CC0 1.0 e mantém essa licença.

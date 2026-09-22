@@ -14,7 +14,7 @@ Each dashboard ships the `.pbix` file to open and interact with, captures of eve
 
 ## The Price Illusion — wine, label and blind tasting
 
-![Overview page](ilusao-do-preco/img/01-visao-geral.png)
+![Overview page](ilusao-precos-vinhos/img/01-visao-geral.png)
 
 Does knowing the price change the score you give a wine? The dataset holds 40,000 bottles rated twice — **blind**, and then **with the price visible**.
 
@@ -29,19 +29,19 @@ Expensive wine gains points for being expensive; cheap wine loses points for bei
 
 From the cheapest decile to the priciest, the **blind** score moves 0.8 points. **With the price visible**, it moves 9.7. The difference is the label.
 
-![Price effect page](ilusao-do-preco/img/02-efeito-do-preco.png)
+![Price effect page](ilusao-precos-vinhos/img/02-efeito-do-preco.png)
 
 On the third page's two lines **nobody saw the price** — and still the expert and the novice disagree in direction: the expert's scores rise with the price band (80.6 → 83.2), the novice's fall (82.6 → 81.3).
 
-![Who and where page](ilusao-do-preco/img/03-quem-e-onde.png)
+![Who and where page](ilusao-precos-vinhos/img/03-quem-e-onde.png)
 
 > **A note on the data.** Checking the dataset mid-build, I concluded it is computer-generated rather than collected from real blind tastings. The figures above describe the generator's behaviour, not wine drinkers' — they are not evidence about how people perceive price. The modelling, DAX and visualisation exercise is unchanged.
 
 **Technique:** 3 pages · 4 calculated columns · 13 DAX measures · Pearson written by hand with `SUMX`, because DAX has no `CORREL`.
 
-**Data:** [Wine Price vs. Blind Quality](https://www.kaggle.com/datasets/sergionefedov/wine-price-vs-blind-qualitydo-you-pay-for-taste), by sergionefedov on Kaggle, CC0 1.0. The CSV is versioned under `ilusao-do-preco/data/` so the report stays reproducible if the source dataset changes.
+**Data:** [Wine Price vs. Blind Quality](https://www.kaggle.com/datasets/sergionefedov/wine-price-vs-blind-qualitydo-you-pay-for-taste), by sergionefedov on Kaggle, CC0 1.0. The CSV is versioned under `ilusao-precos-vinhos/data/` so the report stays reproducible if the source dataset changes.
 
-📁 [`ilusao-do-preco/`](ilusao-do-preco/)
+📁 [`ilusao-precos-vinhos/`](ilusao-precos-vinhos/)
 
 ---
 
@@ -82,7 +82,7 @@ powerbi-dashboards/
 ├── README.md / README.en.md
 ├── LICENSE · .gitignore · .gitattributes
 │
-├── ilusao-do-preco/
+├── ilusao-precos-vinhos/
 │   ├── img/          # the 3 pages
 │   ├── data/         # the CSV the report reads
 │   └── powerbi/      # ilusao-do-preco.pbix
@@ -120,4 +120,4 @@ Study projects. Not professional work nor client commissions.
 
 ## Licence
 
-Code and documentation under the MIT licence — see [`LICENSE`](LICENSE). The CSV under `ilusao-do-preco/data/` derives from a CC0 1.0 dataset and keeps that licence.
+Code and documentation under the MIT licence — see [`LICENSE`](LICENSE). The CSV under `ilusao-precos-vinhos/data/` derives from a CC0 1.0 dataset and keeps that licence.
